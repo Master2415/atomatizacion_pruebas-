@@ -1,0 +1,3493 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registro-de-usuarios-en-la-api;nuevo-usuario-se-registra-con-éxito-en-la-base-de-datos",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Nuevo usuario se registra con éxito en la base de datos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 370700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "un nuevo usuario desea registrarse en la aplicación",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2125899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Email",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "douglas",
+                      "douglas@gmail.com",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 5,
+            "name": "proporciona la siguiente información de registro:",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "el usuario envía una solicitud POST a /api/add",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94121900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "el código de respuesta de /api/add debe ser 201",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 567100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "el cuerpo de la respuesta debe contener el token del usuario registrado",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54859700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registro-de-usuarios-en-la-api;nuevo-usuario-intenta-registrarse-sin-proporcionar-los-datos-requeridos",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Nuevo usuario intenta registrarse sin proporcionar los datos requeridos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "un nuevo usuario desea registrarse en la aplicación",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Email",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "douglas",
+                      "douglas@gmail.com",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 5,
+            "name": "proporciona la siguiente información de registro:",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "el usuario envía una solicitud POST a /api/add sin los datos requeridos",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6279299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "el código de respuesta de /api/add debe ser 400",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "el cuerpo de la respuesta de /api/add debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 938399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registro-de-usuarios-en-la-api;nuevo-usuario-intenta-registrarse-con-un-email-que-ya-está-registrado",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Nuevo usuario intenta registrarse con un email que ya está registrado",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "un nuevo usuario desea registrarse en la aplicación",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108099
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Email",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "douglas",
+                      "douglas@gmail.com",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 5,
+            "name": "proporciona la siguiente información de registro:",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 231600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "un usuario intenta registrarse pero ya existe en la base de datos",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 181899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "el usuario envía una solicitud POST a /api/add con un correo ya registrado en la base de datos",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13258099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "el código de respuesta de /api/add debe ser 409",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "el cuerpo de la respuesta de /api/add debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\addUser-imp.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "registro-de-usuarios-en-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registro de Usuarios en la API",
+    "tags": [],
+    "uri": "features\\addUser.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "eliminación-de-usuarios-en-la-api;usuario-registrado-elimina-su-cuenta-exitosamente",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Usuario registrado elimina su cuenta exitosamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación.",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "el usuario envía una solicitud POST a /api/delete/{email} con un token válido y un email",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17655399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el código de respuesta de /api/delete/{email} debe ser 200",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "el cuerpo de la respuesta de /api/delete/{email} debe contener un mensaje de confirmación de eliminación",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28411299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "eliminación-de-usuarios-en-la-api;usuario-registrado-intenta-eliminar-su-cuenta-sin-proporcionar-un-token-válido",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Usuario registrado intenta eliminar su cuenta sin proporcionar un token válido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación.",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el usuario envía una solicitud POST a /api/delete/{email} sin un token válido",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9810800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el código de respuesta de /api/delete/{email} debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "el cuerpo de la respuesta de /api/delete/{email} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1667099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "eliminación-de-usuarios-en-la-api;usuario-registrado-intenta-eliminar-su-cuenta-con-token-de-otro-usuario",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Usuario registrado intenta eliminar su cuenta con token de otro usuario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación.",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario envía una solicitud POST a /api/delete/{email} con un token de otro usuario",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13956199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "el código de respuesta de /api/delete/{email} debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "el cuerpo de la respuesta de /api/delete/{email} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "eliminación-de-usuarios-en-la-api;usuario-registrado-intenta-eliminar-una-cuenta-que-ya-ha-sido-eliminada",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Usuario registrado intenta eliminar una cuenta que ya ha sido eliminada",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación.",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "un usuario ha eliminado su cuenta previamente",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 162299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "el usuario envía una solicitud POST a /api/delete/{email} con un email eliminado",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5784700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "el código de respuesta de /api/delete/{email} debe ser 404",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "el cuerpo de la respuesta de /api/delete/{email} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "eliminación-de-usuarios-en-la-api;usuario-registrado-intenta-eliminar-la-cuenta-de-otro-usuario",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Usuario registrado intenta eliminar la cuenta de otro usuario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación.",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "un usuario intenta eliminar la cuenta de otro usuario",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "el usuario envía una solicitud POST a /api/delete/{email} con email no correspondiente a su token",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:130"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4451300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "el código de respuesta de /api/delete/{email} debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "el cuerpo de la respuesta de /api/delete/{email} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\deleteUser-imp.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "eliminación-de-usuarios-en-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Eliminación de Usuarios en la API",
+    "tags": [],
+    "uri": "features\\deleteUser.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "obtener-todos-los-usuarios-de-la-api;usuario-registrado-obtiene-correctamente-todos-los-usuarios",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Usuario registrado obtiene correctamente todos los usuarios",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "el usuario envía una solicitud GET a /api/all con un token válido",
+            "match": {
+              "location": "features\\step_definitions\\getAllUsers-imp.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6790699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el código de respuesta de /api/all debe ser 200",
+            "match": {
+              "location": "features\\step_definitions\\getAllUsers-imp.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 252599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "el cuerpo de la respuesta de /api/all debe contener todos los usuarios",
+            "match": {
+              "location": "features\\step_definitions\\getAllUsers-imp.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24938700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "obtener-todos-los-usuarios-de-la-api;usuario-intenta-obtener-todos-los-usuarios-sin-proporcionar-un-token-válido",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Usuario intenta obtener todos los usuarios sin proporcionar un token válido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el usuario envía una solicitud GET a /api/all sin un token válido",
+            "match": {
+              "location": "features\\step_definitions\\getAllUsers-imp.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2550799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el código de respuesta de /api/all debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\getAllUsers-imp.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "el cuerpo de la respuesta de /api/all debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\getAllUsers-imp.js:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 564900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "obtener-todos-los-usuarios-de-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Obtener todos los usuarios de la API",
+    "tags": [],
+    "uri": "features\\getAllUsers.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "obtener-usuario-por-id-en-la-api;usuario-obtiene-correctamente-un-usuario-por-id",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Usuario obtiene correctamente un usuario por ID",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "el usuario envía una solicitud GET a /api/search/{id} con un ID y token válido",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7115299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el código de respuesta de /api/search/{id} debe ser 200",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "el cuerpo de la respuesta de /api/search/{id} debe contener el usuario solicitado",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27033499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "obtener-usuario-por-id-en-la-api;usuario-intenta-obtener-un-usuario-por-id-sin-proporcionar-un-token-válido",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Usuario intenta obtener un usuario por ID sin proporcionar un token válido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el usuario envía una solicitud GET a /api/search/{id} sin un token valido",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4283199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el código de respuesta de /api/search/{id} debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "el cuerpo de la respuesta de /api/search/{id} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 725899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "obtener-usuario-por-id-en-la-api;usuario-intenta-obtener-un-usuario-por-id-que-no-existe",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Usuario intenta obtener un usuario por ID que no existe",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario envía una solicitud GET a /api/search/{id} con un ID no existente",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4839099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "el código de respuesta de /api/search/{id} debe ser 404",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "el cuerpo de la respuesta de /api/search/{id} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "obtener-usuario-por-id-en-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Obtener Usuario por ID en la API",
+    "tags": [],
+    "uri": "features\\getUserById.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "autenticación-de-usuarios-en-la-api;usuario-inicia-sesión-correctamente",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Usuario inicia sesión correctamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 188299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "douglas",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "el usuario envía una solicitud POST a /api/login con credenciales válidas",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14020099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el código de respuesta debe ser 200",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "el cuerpo de la respuesta debe contener un token de acceso válido",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25167300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autenticación-de-usuarios-en-la-api;usuario-intenta-iniciar-sesión-sin-proporcionar-un-método-post",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Usuario intenta iniciar sesión sin proporcionar un método POST",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9799
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "douglas",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 145999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "el usuario envía una solicitud GET a /api/login sin metodo post",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26491799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "el código de respuesta debe ser 404",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "el cuerpo de la respuesta debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 769399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autenticación-de-usuarios-en-la-api;usuario-intenta-iniciar-sesión-sin-proporcionar-un-nombre-de-usuario-o-contraseña",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Usuario intenta iniciar sesión sin proporcionar un nombre de usuario o contraseña",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "douglas",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "el usuario envía una solicitud POST a /api/login sin nombre de usuario o contraseña",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19389200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "el código de respuesta debe ser 400",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "el cuerpo de la respuesta debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "autenticación-de-usuarios-en-la-api;usuario-intenta-iniciar-sesión-con-credenciales-inválidas",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Usuario intenta iniciar sesión con credenciales inválidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19399
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30099
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "douglas",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "el usuario envía una solicitud POST a /api/login con credenciales inválidas",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5069600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "el código de respuesta debe ser 404",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "el cuerpo de la respuesta debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\login-imp.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "autenticación-de-usuarios-en-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Autenticación de Usuarios en la API",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "recuperación-de-contraseña-en-la-api;usuario-recupera-su-contraseña-exitosamente",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Usuario recupera su contraseña exitosamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "el usuario envía una solicitud GET a /api/recover/{email} con un correo electrónico y token válidos",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15727100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el código de respuesta de /api/recover/{email} debe ser 200",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "el cuerpo de la respuesta de /api/recover/{email} debe contener la contraseña recuperada",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21484800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "recuperación-de-contraseña-en-la-api;usuario-intenta-recuperar-su-contraseña-sin-proporcionar-un-token-válido",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Usuario intenta recuperar su contraseña sin proporcionar un token válido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7300
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el usuario envía una solicitud GET a /api/recover/{email} sin un token valido",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3486700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el código de respuesta de /api/recover/{email} debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "el cuerpo de la respuesta de /api/recover/{email} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 627800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "recuperación-de-contraseña-en-la-api;usuario-intenta-recuperar-su-contraseña-con-un-correo-electrónico-no-registrado",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Usuario intenta recuperar su contraseña con un correo electrónico no registrado",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15299
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario envía una solicitud GET a /api/recover/{email} con un correo electrónico no registrado",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4849199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "el código de respuesta de /api/recover/{email} debe ser 404",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "el cuerpo de la respuesta de /api/recover/{email} debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\recoverPassword-imp.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "recuperación-de-contraseña-en-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Recuperación de Contraseña en la API",
+    "tags": [],
+    "uri": "features\\recoverPassword.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualización-de-contraseña-en-la-api;usuario-actualiza-su-contraseña-exitosamente",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Usuario actualiza su contraseña exitosamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13100
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14600
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "el usuario envía una solicitud POST a /api/update(Password) con su correo, contraseña nueva, y token valido",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10909399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el código de respuesta de /api/update(Password) debe ser 200",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "el cuerpo de la respuesta de /api/update(Password) debe contener la nueva contraseña",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25933800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "actualización-de-contraseña-en-la-api;usuario-intenta-actualizar-su-contraseña-sin-proporcionar-un-token-válido",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Usuario intenta actualizar su contraseña sin proporcionar un token válido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el usuario envía una solicitud POST a /api/update(Password) sin un token valido",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8368400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el código de respuesta de /api/update(Password) debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "el cuerpo de la respuesta de /api/update(Password) debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 584499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "actualización-de-contraseña-en-la-api;usuario-intenta-actualizar-su-contraseña-con-la-misma-contraseña-actual",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Usuario intenta actualizar su contraseña con la misma contraseña actual",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14999
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8799
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario envía una solicitud POST a /api/update(Password) con la misma contraseña que usa actualmente",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13197500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "el código de respuesta de /api/update(Password) debe ser 400",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "el cuerpo de la respuesta de /api/update(Password) debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "actualización-de-contraseña-en-la-api;usuario-intenta-actualizar-su-contraseña-sin-proporcionar-su-correo-ni-contraseña-nueva",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Usuario intenta actualizar su contraseña sin proporcionar su correo ni contraseña nueva",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un token válido para acceder a la API",
+            "match": {
+              "location": "features\\step_definitions\\getUserById-imp.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "el usuario envía una solicitud POST a /api/update(Password) sin proporcionar su correo ni contraseña nueva",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2093199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "el código de respuesta de /api/update(Password) debe ser 400",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "el cuerpo de la respuesta de /api/update(Password) debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\updatePassword-imp.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 144800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualización-de-contraseña-en-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualización de Contraseña en la API",
+    "tags": [],
+    "uri": "features\\updatePassword.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualización-de-usuario-registrados-en-la-api;usuario-registrado-actualiza-sus-datos-exitosamente",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Usuario registrado actualiza sus datos exitosamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19700
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26200
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Id",
+                      "Name",
+                      "Email",
+                      "Password",
+                      "Date"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "douglas",
+                      "douglas@gmail.com",
+                      "1234",
+                      "2024-03-26"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "el usuario registrado envía una solicitud PUT a /api/update con los datos actualizados y un token válido",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7559999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el código de respuesta de /api/update debe ser 200",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "el cuerpo de la respuesta debe contener los detalles del usuario actualizado",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24048900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "actualización-de-usuario-registrados-en-la-api;usuario-registrado-intenta-actualizar-sus-datos-sin-proporcionar-un-token-válido",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Usuario registrado intenta actualizar sus datos sin proporcionar un token válido",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20900
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10299
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Id",
+                      "Name",
+                      "Email",
+                      "Password",
+                      "Date"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "douglas",
+                      "douglas@gmail.com",
+                      "1234",
+                      "2024-03-26"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "el usuario registrado envía una solicitud PUT a /api/update sin un token válido",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5366400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "el código de respuesta de /api/update debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "el cuerpo de la respuesta de /api/update debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 588299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "actualización-de-usuario-registrados-en-la-api;usuario-registrado-intenta-actualizar-sus-datos-con-un-token-de-otro-usuario-registrado",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Usuario registrado intenta actualizar sus datos con un token de otro usuario registrado",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16599
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6699
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6499
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Id",
+                      "Name",
+                      "Email",
+                      "Password",
+                      "Date"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "douglas",
+                      "douglas@gmail.com",
+                      "1234",
+                      "2024-03-26"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "el usuario registrado envía una solicitud PUT a /api/update con un token de otro usuario",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2746600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "el código de respuesta de /api/update debe ser 401",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "el cuerpo de la respuesta de /api/update debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "actualización-de-usuario-registrados-en-la-api;usuario-registrado-intenta-actualizar-sus-datos-con-un-correo-electrónico-que-ya-está-en-uso-por-otro-usuario-registrado",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Usuario registrado intenta actualizar sus datos con un correo electrónico que ya está en uso por otro usuario registrado",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15499
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13500
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12099
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10700
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Id",
+                      "Name",
+                      "Email",
+                      "Password",
+                      "Date"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "1",
+                      "douglas",
+                      "douglas@gmail.com",
+                      "1234",
+                      "2024-03-26"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "existe un usuario registrado registrado en la aplicación con la siguiente información:",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "el usuario registrado envía una solicitud PUT a /api/update con un correo electrónico ya registrado",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4413800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "el código de respuesta de /api/update debe ser 409",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "el cuerpo de la respuesta de /api/update debe contener un mensaje de error",
+            "match": {
+              "location": "features\\step_definitions\\updateUser-imp.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualización-de-usuario-registrados-en-la-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualización de Usuario registrados en la API",
+    "tags": [],
+    "uri": "features\\updateUser.feature"
+  }
+]
