@@ -14,7 +14,7 @@ let userData = {
     email: faker.fakerAR.internet.email(),
     password: faker.fakerAR.internet.password(),
 };
-let existingUser = { id: 38, name: "Juan", email: "juan@gmail.com", password: "1234"};
+let existingUser = { id: 38, name: "douglas", email: "douglas@gmail.com", password: "1234"};
 
 Before(function () {
     response = null;

@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    environment {
+        // Definir la versión de Node.js que se utilizará
+        NODE_VERSION = '16'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Clonar el repositorio desde GIT
+                git 'https://tu-repositorio-git-url.git'
+            }
+        }
+
+        stage('Install Node.js') {
+            steps {
+                // Instalar Node.js dentro del contenedor de Jenkins
+                sh 'curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash -'
+                sh 'apt-get install -y nodejs'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                // Instalar dependencias del proyecto usando npm
+                sh 'npm install'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                // Ejecutar las pruebas definidas en el proyecto
+                sh 'npm test'
+            }
+        }
+    }
+
+    post {
+        always {
+            // Publicar los resultados de las pruebas
+            junit 'reports/test-results.xml'
+        }
+    }
+}

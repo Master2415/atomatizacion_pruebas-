@@ -11,7 +11,7 @@ let response;
 let token;
 let URL_UPDATE = "http://localhost:8080/api/update";
 let URL_LOGIN = "http://localhost:8080/api/login";
-let userToUpdate = { id: 38, name: "Juan", email: "juan@email.com", password: "1234" };
+let userToUpdate = { id: 38, name: "douglas", email: "douglas@email.com", password: "1234" };
 let ramdomUser = {
     id: Math.floor(Math.random() * 10),
     name: faker.fakerAR.internet.userName(),
