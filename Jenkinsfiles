@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clonar el repositorio desde GIT
-                git 'https://tu-repositorio-git-url.git'
+                git 'https://github.com/Master2415/automatizacion_pruebas.git'
             }
         }
 
